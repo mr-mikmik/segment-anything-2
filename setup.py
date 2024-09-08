@@ -8,7 +8,7 @@ import os
 from setuptools import find_packages, setup
 
 # Package metadata
-NAME = "SAM 2"
+NAME = "sam2"
 VERSION = "1.0"
 DESCRIPTION = "SAM 2: Segment Anything in Images and Videos"
 URL = "https://github.com/facebookresearch/segment-anything-2"
@@ -141,7 +141,7 @@ setup(
     include_package_data=True,
     install_requires=REQUIRED_PACKAGES,
     extras_require=EXTRA_PACKAGES,
-    python_requires=">=3.10.0",
+    python_requires=">=3.8",
     ext_modules=get_extensions(),
     cmdclass=cmdclass,
 )
